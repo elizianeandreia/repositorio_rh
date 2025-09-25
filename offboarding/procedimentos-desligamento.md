@@ -14,11 +14,11 @@ O colaborador deverá realizar a transferência de tarefas, responsabilidades e 
 
 <b> 4 - Procedimentos Legais e Administrativos</b>
 
-Cálculo das verbas rescisórias: Será calculado  todos os valores devidos ao colaborador, de acordo com o tipo de desligamento.
+Cálculo das verbas rescisórias: Todos os valores devidos serão calculados de acordo com o tipo de desligamento.
 
-Pagamento das verbas: O pagamento será efetuado em até 10 dias corridos após o último dia de trabalho, sob pena de multa para a empresa. 
+Pagamento das verbas: O pagamento será efetuado em até 10 dias corridos após o último dia de trabalho, conforme a legislação vigente.
 
-Entrega de documentação: Fornecer o extrato do FGTS, seguro-desemprego e demais documentos necessários para o processo do colaborador. 
+Entrega de documentação:Serão entregues o extrato do FGTS, guias de seguro-desemprego e demais documentos necessários para a finalização do processo.
 
 
 <b> 5 - Retirada do Colaborador da Empresa</b>
