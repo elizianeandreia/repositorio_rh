@@ -23,9 +23,8 @@ Entrega de documentação:Serão entregues o extrato do FGTS, guias de seguro-de
 
 <b> 5 - Retirada do Colaborador da Empresa</b>
 
-Restrição de acessos : Contas de e-mail, sistemas e bancos de dados do colaborador serão desativadas imediatamente após sua saída.
-Devolução de bens : Será feita a coleta de equipamentos e outros bens da empresa. 
-Iremos enviar o código de postagem.
+Acessos: As contas de e-mail, sistemas internos e bancos de dados serão desativados imediatamente após a saída.
+Devolução de bens: Será realizada a coleta de equipamentos e demais materiais da empresa. O colaborador receberá um código de postagem para envio, quando aplicável.
 
 
 <b> 6 - Pós desligamento:</b>
