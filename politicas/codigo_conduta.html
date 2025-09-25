@@ -10,19 +10,16 @@
             margin: 0;
             padding: 20px;
         }
-
         h1 {
             text-align: center;
             color: #003366;
         }
-
         .cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
             margin-top: 30px;
         }
-
         .card {
             background: white;
             padding: 20px;
@@ -30,27 +27,22 @@
             box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
             transition: transform 0.2s ease-in-out;
         }
-
         .card:hover {
             transform: scale(1.05);
         }
-
         .card h2 {
             font-size: 1.2rem;
             color: #00509e;
             margin-bottom: 10px;
         }
-
         .card ul {
             list-style: none;
             padding-left: 0;
         }
-
         .card ul li::before {
             content: "✔ ";
             color: green;
         }
-
         .back-btn {
             display: block;
             margin: 40px auto 0 auto;
@@ -70,7 +62,6 @@
 </head>
 <body>
     <h1>Código de Conduta</h1>
-
     <div class="cards">
         <div class="card">
             <h2>Ética e Integridade</h2>
@@ -80,7 +71,6 @@
                 <li>Respeite leis e regulamentos</li>
             </ul>
         </div>
-
         <div class="card">
             <h2>Respeito e Diversidade</h2>
             <ul>
@@ -89,7 +79,6 @@
                 <li>Não tolere assédio ou discriminação</li>
             </ul>
         </div>
-
         <div class="card">
             <h2>Uso de Recursos</h2>
             <ul>
@@ -98,7 +87,6 @@
                 <li>Evite desperdícios</li>
             </ul>
         </div>
-
         <div class="card">
             <h2>Conflitos de Interesse</h2>
             <ul>
@@ -106,7 +94,6 @@
                 <li>Informe qualquer conflito ao gestor</li>
             </ul>
         </div>
-
         <div class="card">
             <h2>Comunicação e Imagem</h2>
             <ul>
@@ -115,7 +102,6 @@
                 <li>Preserve a reputação da empresa</li>
             </ul>
         </div>
-
         <div class="card">
             <h2>Saúde e Segurança</h2>
             <ul>
@@ -124,7 +110,6 @@
                 <li>Reporte riscos imediatamente</li>
             </ul>
         </div>
-
         <div class="card">
             <h2>Dados e Informações</h2>
             <ul>
@@ -133,7 +118,11 @@
             </ul>
         </div>
     </div>
-
-    
+    <button class="back-btn" onclick="fecharIframe()">Fechar</button>
+    <script>
+        function fecharIframe() {
+            window.parent.postMessage("fecharIframe", "*");
+        }
+    </script>
 </body>
 </html>
