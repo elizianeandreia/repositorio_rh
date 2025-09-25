@@ -41,3 +41,39 @@ async function loadPolicy(file, title) {
     alert("Erro ao carregar: " + error.message);
   }
 }
+
+async function loadPolicy(file) {
+  const markdownViewer = document.getElementById('markdown-viewer');
+  const checklistViewer = document.getElementById('checklist-viewer');
+
+  checklistViewer.style.display = "none";
+  markdownViewer.style.display = "block";
+
+  try {
+    const response = await fetch(file);
+    if (!response.ok) throw new Error('Arquivo não encontrado');
+    const text = await response.text();
+
+  
+    if (file.includes("checklist-onboarding.md")) {
+      markdownViewer.style.display = "none";
+      checklistViewer.style.display = "block";
+      checklistViewer.innerHTML = `
+        <h3>Checklist de Integração</h3>
+        <ul class="checklist">
+          <li><input type="checkbox"> Assinatura do contrato / entrega de documentos</li>
+          <li><input type="checkbox"> Criação de e-mail corporativo</li>
+          <li><input type="checkbox"> Acesso aos sistemas internos</li>
+          <li><input type="checkbox"> Entrega de equipamentos</li>
+          <li><input type="checkbox"> Apresentação da empresa e da equipe</li>
+          <li><input type="checkbox"> Treinamento inicial</li>
+          <li><input type="checkbox"> Definição de metas dos primeiros 30 dias</li>
+        </ul>
+      `;
+    } else {
+      markdownViewer.innerHTML = marked.parse(text);
+    }
+  } catch (error) {
+    markdownViewer.innerHTML = `<p style="color:red;">Erro ao carregar o arquivo: ${error.message}</p>`;
+  }
+}
