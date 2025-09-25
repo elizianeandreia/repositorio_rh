@@ -29,34 +29,32 @@ Devolução de bens: Será realizada a coleta de equipamentos e demais materiais
 
 <b> 6 - Pós desligamento:</b>
 
-Análise do Feedback : Utilizaremos a entrevista de desligamento para otimizar os processos internos e melhorar o ambiente de trabalho.
+Análise do Feedback : Será realizada uma entrevista de desligamento, cujo objetivo é obter feedbacks para otimizar processos internos e promover melhorias no ambiente de trabalho.
 
-Para PJ .
+Política de Desligamento – PJ
 
 <b> 1 - Comunicação </b>
 
-O colaborador será comunicado de forma remota através de uma videochamada pelo Zoom (por atuarmos em Home Office)
+O prestador de serviços será comunicado sobre o desligamento por meio de videoconferência via Zoom, em razão do regime de Home Office adotado pela empresa.
 
 <b> 2 - Desligamento</b>
 
-O gestor direto e o RH estarão presentes no ato de desligamento explicando o motivo de forma transparente e abertos a feedback coletivo e ou, individual(se assim o colaborador preferir). Caso o colaborador opte por individual, poderá falar posteriormente apenas com o RH para feedbacks.
+O gestor direto e o RH participarão do momento de desligamento, esclarecendo os motivos de forma transparente e disponibilizando espaço para feedback coletivo ou individual, conforme a preferência do prestador.
 
 <b> 3 - Transferência de Funções </b> 
-Será necessário realizar a transferência de tarefas e documentos para outros prestadores, garantindo a continuidade do trabalho. 
-Essa transferência ocorrerá dentro do período de aviso prévio.
-Em caso de não haver aviso prévio. A gestão da área ficará responsável pelo processo.
+Será necessária a transferência de atividades e documentos para outros prestadores, a fim de assegurar a continuidade do trabalho. Esse processo ocorrerá durante o aviso prévio ou, na ausência dele, será conduzido pela gestão da área responsável.
 
 
 <b> 4 - Procedimentos Legais e Administrativos</b>
 
-Pagamento das verbas: O pagamento será efetuado em até 10 dias corridos após o último dia de trabalho referente aos serviços prestados, com base nas notas fiscais emitidas e no que foi definido em contrato.
+O pagamento pelos serviços prestados será realizado em até 10 dias corridos após a data do desligamento, considerando as notas fiscais devidamente emitidas e as condições estabelecidas em contrato.
 
 
 <b> 5 - Retirada do Colaborador da Empresa</b>
 
-Restrição de acessos : Contas de e-mail, sistemas e bancos de dados do colaborador serão desativadas imediatamente após sua saída.
+Acessos: Os acessos a e-mails, sistemas internos e bancos de dados serão desativados imediatamente após o encerramento da relação contratual.
 
 
 <b> 6 - Pós desligamento:</b>
 
-Análise do Feedback : Utilizaremos a entrevista de desligamento para otimizar os processos internos e melhorar o ambiente de trabalho.
+Análise do Feedback : Será realizada uma entrevista de desligamento com o objetivo de coletar feedbacks, aprimorar processos internos e contribuir para a melhoria contínua do ambiente organizacional.
