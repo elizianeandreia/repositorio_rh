@@ -1,0 +1,65 @@
+Para CLT.
+
+<b> 1 - Comunicação </b>
+
+O colaborador será comunicado de forma remota através de uma videochamada pelo Zoom (por atuarmos em Home Office)
+
+<b> 2 - Desligamento</b>
+
+O gestor direto e o RH estarão presentes no ato de desligamento explicando o motivo de forma transparente e abertos a feedback coletivo e ou, individual(se assim o colaborador preferir). Caso o colaborador opte por individual, poderá falar posteriormente apenas com o RH para feedbacks.
+
+<b> 3 - Transferência de Funções </b>
+
+Será necessário realizar a transferência de tarefas e documentos para outros colaboradores, garantindo a continuidade do trabalho. 
+Essa transferência ocorrerá dentro do período de aviso prévio.
+Em caso de não haver aviso prévio. A gestão da área ficará responsável pelo processo.
+
+<b> 4 - Procedimentos Legais e Administrativos</b>
+
+Cálculo das verbas rescisórias: Será calculado  todos os valores devidos ao colaborador, de acordo com o tipo de desligamento.
+
+Pagamento das verbas: O pagamento será efetuado em até 10 dias corridos após o último dia de trabalho, sob pena de multa para a empresa. 
+
+Entrega de documentação: Fornecer o extrato do FGTS, seguro-desemprego e demais documentos necessários para o processo do colaborador. 
+
+
+<b> 5 - Retirada do Colaborador da Empresa</b>
+
+Restrição de acessos : Contas de e-mail, sistemas e bancos de dados do colaborador serão desativadas imediatamente após sua saída.
+Devolução de bens : Será feita a coleta de equipamentos e outros bens da empresa. 
+Iremos enviar o código de postagem.
+
+
+<b> 6 - Pós desligamento:</b>
+
+Análise do Feedback : Utilizaremos a entrevista de desligamento para otimizar os processos internos e melhorar o ambiente de trabalho.
+
+Para PJ .
+
+<b> 1 - Comunicação </b>
+
+O colaborador será comunicado de forma remota através de uma videochamada pelo Zoom (por atuarmos em Home Office)
+
+<b> 2 - Desligamento</b>
+
+O gestor direto e o RH estarão presentes no ato de desligamento explicando o motivo de forma transparente e abertos a feedback coletivo e ou, individual(se assim o colaborador preferir). Caso o colaborador opte por individual, poderá falar posteriormente apenas com o RH para feedbacks.
+
+<b> 3 - Transferência de Funções </b> 
+Será necessário realizar a transferência de tarefas e documentos para outros prestadores, garantindo a continuidade do trabalho. 
+Essa transferência ocorrerá dentro do período de aviso prévio.
+Em caso de não haver aviso prévio. A gestão da área ficará responsável pelo processo.
+
+
+<b> 4 - Procedimentos Legais e Administrativos</b>
+
+Pagamento das verbas: O pagamento será efetuado em até 10 dias corridos após o último dia de trabalho referente aos serviços prestados, com base nas notas fiscais emitidas e no que foi definido em contrato.
+
+
+<b> 5 - Retirada do Colaborador da Empresa</b>
+
+Restrição de acessos : Contas de e-mail, sistemas e bancos de dados do colaborador serão desativadas imediatamente após sua saída.
+
+
+<b> 6 - Pós desligamento:</b>
+
+Análise do Feedback : Utilizaremos a entrevista de desligamento para otimizar os processos internos e melhorar o ambiente de trabalho.

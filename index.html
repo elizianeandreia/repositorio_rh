@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repositório de Políticas Internas do RH</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Repositório de Políticas Internas do RH</h1>
+  </header>
+  <main>
+    <nav class="sidebar">
+      <h2>Políticas</h2>
+      <h3>Onboarding</h3>
+      <ul>
+        <li><a href="#" onclick="loadPolicy('onboarding/boas_vindas.md','Boas-vindas')">Boas-vindas</a></li>
+        <li><a href="#" onclick="loadPolicy('onboarding/checklist-onboarding.md','Checklist')">Checklist de integração</a></li>
+      </ul>
+      <h3>Offboarding</h3>
+      <ul>
+        <li><a href="#" onclick="loadPolicy('offboarding/procedimentos-desligamento.md','Desligamento')">Procedimentos de desligamento</a></li>
+      </ul>
+      <h3>Políticas Gerais</h3>
+      <ul>
+        <li><a href="#" onclick="loadPolicy('politicas/codigo-de-conduta.md','Código de Conduta')">Código de conduta</a></li>
+        <li><a href="#" onclick="loadPolicy('politicas/politica-diversidade.md','Diversidade')">Diversidade e inclusão</a></li>
+        <li><a href="#" onclick="loadPolicy('politicas/politica-diretrizes.md','Trabalho Remoto')">Trabalho remoto</a></li>
+        <li><a href="#" onclick="loadPolicy('politicas/politica-avd.md','Avaliação')">Avaliação de desempenho</a></li>
+        <li><a href="#" onclick="loadPolicy('politicas/politica-recrutamento.md','Recrutamento')">Recrutamento e seleção</a></li>
+      </ul>
+    </nav>
+    <section id="policy-content" class="policy-content">
+      <h2>Visualização</h2>
+      <div class="tabs" id="tabs"></div>
+      <div id="tab-contents"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Repositório de Políticas Internas do RH - LTHS Tecnologia </p>
+  </footer>
+</body>
+</html>
