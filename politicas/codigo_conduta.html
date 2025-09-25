@@ -118,11 +118,12 @@
             </ul>
         </div>
     </div>
-    <button class="back-btn" onclick="fecharIframe()">Fechar</button>
-    <script>
-        function fecharIframe() {
-            window.parent.postMessage("fecharIframe", "*");
-        }
-    </script>
-</body>
+    <button class="back-btn" onclick="fecharConteudo()">Fechar</button>
+
+<script>
+  function fecharConteudo() {
+    window.parent.postMessage("fecharConteudo", "*");
+  }
+</script>
+
 </html>
