@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Código de Conduta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #003366;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h2 {
+            font-size: 1.2rem;
+            color: #00509e;
+            margin-bottom: 10px;
+        }
+
+        .card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .card ul li::before {
+            content: "✔ ";
+            color: green;
+        }
+
+        .back-btn {
+            display: block;
+            margin: 40px auto 0 auto;
+            padding: 12px 28px;
+            background: #00509e;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .back-btn:hover {
+            background: #003366;
+        }
+    </style>
+</head>
+<body>
+    <h1>Código de Conduta</h1>
+
+    <div class="cards">
+        <div class="card">
+            <h2>Ética e Integridade</h2>
+            <ul>
+                <li>Seja honesto e transparente</li>
+                <li>Não pratique corrupção ou favorecimento</li>
+                <li>Respeite leis e regulamentos</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Respeito e Diversidade</h2>
+            <ul>
+                <li>Trate todos com dignidade</li>
+                <li>Promova um ambiente inclusivo</li>
+                <li>Não tolere assédio ou discriminação</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Uso de Recursos</h2>
+            <ul>
+                <li>Utilize recursos apenas para trabalho</li>
+                <li>Preserve confidencialidade</li>
+                <li>Evite desperdícios</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Conflitos de Interesse</h2>
+            <ul>
+                <li>Evite prejuízo à imparcialidade</li>
+                <li>Informe qualquer conflito ao gestor</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Comunicação e Imagem</h2>
+            <ul>
+                <li>Seja claro e respeitoso</li>
+                <li>Respeite políticas de redes sociais</li>
+                <li>Preserve a reputação da empresa</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Saúde e Segurança</h2>
+            <ul>
+                <li>Siga as normas de segurança</li>
+                <li>Cuide da sua saúde e dos colegas</li>
+                <li>Reporte riscos imediatamente</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Dados e Informações</h2>
+            <ul>
+                <li>Respeite a LGPD</li>
+                <li>Mantenha sigilo das informações</li>
+            </ul>
+        </div>
+    </div>
+
+    
+</body>
+</html>

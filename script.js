@@ -64,7 +64,7 @@ async function loadPolicy(file) {
           <li><input type="checkbox"> Assinatura do contrato / entrega de documentos</li>
           <li><input type="checkbox"> Criação de e-mail corporativo</li>
           <li><input type="checkbox"> Acesso aos sistemas internos</li>
-          <li><input type="checkbox"> Entrega de equipamentos</li>
+          <li><input type="checkbox"> Entrega de equipamentos (CLT) </li>
           <li><input type="checkbox"> Apresentação da empresa e da equipe</li>
           <li><input type="checkbox"> Treinamento inicial</li>
           <li><input type="checkbox"> Definição de metas dos primeiros 30 dias</li>
