@@ -154,3 +154,19 @@ footer {
 .policy-content {
   margin-bottom: 80px; 
 }
+
+.checklist {
+  list-style: none;
+  padding: 0;
+}
+.checklist li {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.checklist input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+.checklist label {
+  cursor: pointer;
+}
