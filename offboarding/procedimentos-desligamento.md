@@ -1,4 +1,4 @@
-Política de Desligamento – CLT
+Política de Desligamento: CLT
 
 <b> 1 - Comunicação </b>
 
@@ -31,7 +31,7 @@ Devolução de bens: Será realizada a coleta de equipamentos e demais materiais
 
 Análise do Feedback : Será realizada uma entrevista de desligamento, cujo objetivo é obter feedbacks para otimizar processos internos e promover melhorias no ambiente de trabalho.
 
-Política de Desligamento – PJ
+Política de Desligamento: PJ
 
 <b> 1 - Comunicação </b>
 
