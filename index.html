@@ -31,18 +31,32 @@
         <li><a href="#" onclick="loadPolicy('politicas/politica-diretrizes.md','Trabalho Remoto')">Trabalho remoto</a></li>
         <li><a href="#" onclick="loadPolicy('politicas/politica-avd.md','Avaliação')">Avaliação de desempenho</a></li>
         <li><a href="#" onclick="loadPolicy('politicas/politica-recrutamento.md','Recrutamento')">Recrutamento e seleção</a></li>
-        
-
       </ul>
     </nav>
-<section id="policy-content" class="policy-content">
-  <h2>Visualização</h2>
-  <div id="markdown-viewer">Selecione uma política para visualizar aqui.</div>
-  <div id="checklist-viewer" style="display:none;"></div>
-</section>
+    <section id="policy-content" class="policy-content">
+      <h2>Visualização</h2>
+      <div id="markdown-viewer">Selecione uma política para visualizar aqui.</div>
+      <iframe id="policy-frame" name="policy-frame" style="width:100%;height:80vh;border:none;display:none;"></iframe>
+      <div id="checklist-viewer" style="display:none;"></div>
+    </section>
   </main>
   <footer>
     <p>&copy; 2025 Repositório de Políticas Internas do RH - LTHS Tecnologia </p>
   </footer>
+  <script>
+    const iframe = document.getElementById("policy-frame");
+    const markdownViewer = document.getElementById("markdown-viewer");
+    window.addEventListener("message", function(event) {
+      if (event.data === "fecharConteudo") {
+        iframe.style.display = "none";
+        markdownViewer.style.display = "block";
+        markdownViewer.innerHTML = "Selecione uma política para visualizar aqui.";
+      }
+    });
+    document.querySelector("a[target='policy-frame']").addEventListener("click", function() {
+      iframe.style.display = "block";
+      markdownViewer.style.display = "none";
+    });
+  </script>
 </body>
 </html>
