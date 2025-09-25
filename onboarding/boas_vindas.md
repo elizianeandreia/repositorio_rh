@@ -7,7 +7,7 @@ Estamos felizes por você ter escolhido caminhar conosco nessa jornada.
 
 Conectar pessoas, gerar impacto positivo e transformar ideias em realidade.
 
-O que você pode esperar
+<b>O que você pode esperar</b>
 
 Um ambiente colaborativo e respeitoso.
 
