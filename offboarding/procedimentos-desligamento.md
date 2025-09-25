@@ -1,18 +1,16 @@
-Para CLT.
+Política de Desligamento – CLT
 
 <b> 1 - Comunicação </b>
 
-O colaborador será comunicado de forma remota através de uma videochamada pelo Zoom (por atuarmos em Home Office)
+O colaborador será informado sobre o desligamento por meio de uma videoconferência realizada via Zoom, considerando que a empresa atua em regime de Home Office.
 
 <b> 2 - Desligamento</b>
 
-O gestor direto e o RH estarão presentes no ato de desligamento explicando o motivo de forma transparente e abertos a feedback coletivo e ou, individual(se assim o colaborador preferir). Caso o colaborador opte por individual, poderá falar posteriormente apenas com o RH para feedbacks.
+O gestor direto e o setor de Recursos Humanos participarão do momento de desligamento, explicando de forma transparente os motivos da decisão e abrindo espaço para feedbacks coletivos ou individuais (conforme a preferência do colaborador). Caso o colaborador opte por feedback individual, este será conduzido posteriormente apenas pelo RH.
 
 <b> 3 - Transferência de Funções </b>
 
-Será necessário realizar a transferência de tarefas e documentos para outros colaboradores, garantindo a continuidade do trabalho. 
-Essa transferência ocorrerá dentro do período de aviso prévio.
-Em caso de não haver aviso prévio. A gestão da área ficará responsável pelo processo.
+O colaborador deverá realizar a transferência de tarefas, responsabilidades e documentos a outros membros da equipe, assegurando a continuidade das atividades. Esse processo será conduzido durante o período de aviso prévio. Na ausência de aviso prévio, a gestão da área assumirá a responsabilidade pela transição.
 
 <b> 4 - Procedimentos Legais e Administrativos</b>
 
