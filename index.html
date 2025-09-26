@@ -53,10 +53,13 @@
         markdownViewer.innerHTML = "Selecione uma política para visualizar aqui.";
       }
     });
-    document.querySelector("a[target='policy-frame']").addEventListener("click", function() {
-      iframe.style.display = "block";
-      markdownViewer.style.display = "none";
-    });
+    document.querySelectorAll("a[target='policy-frame']").forEach(link => {
+  link.addEventListener("click", function() {
+    iframe.style.display = "block";
+    markdownViewer.style.display = "none";
+  });
+});
+
   </script>
 </body>
 </html>
