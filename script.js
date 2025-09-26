@@ -123,4 +123,4 @@ document.getElementById("relatorioForm").addEventListener("submit", function(e) 
     }
 });
 
-}); // Fim do DOMContentLoaded
+}); 
