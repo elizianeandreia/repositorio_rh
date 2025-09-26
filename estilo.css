@@ -139,6 +139,73 @@ footer {
     border-bottom: 1px solid #ddd;
   }
 
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .policy-content {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .tabs {
+    flex-direction: column;
+  }
+
+  .tab {
+    margin-bottom: 5px;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+
+@media (max-width: 480px) {
+  header {
+    font-size: 16px;
+    padding: 0.8rem;
+  }
+
+  .sidebar h3 {
+    font-size: 16px;
+  }
+
+  .sidebar a {
+    font-size: 14px;
+    padding: 0.3rem;
+  }
+
+  .policy-content {
+    padding: 1rem 0.5rem;
+    font-size: 14px;
+  }
+
+  .tabs {
+    flex-direction: column;
+  }
+
+  .tab {
+    font-size: 14px;
+    padding: 0.5rem;
+  }
+
+  .tab-content {
+    padding: 1rem;
+    min-height: auto; 
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 0.6rem;
+  }
+}
+
+
   .policy-content {
     margin-left: 0;
   }
