@@ -1,79 +1,126 @@
-function activateTab(tabId) {
-  document.querySelectorAll(".tab").forEach(tab => tab.classList.remove("active"));
-  document.querySelectorAll(".tab-content").forEach(content => content.classList.remove("active"));
-  document.getElementById("tab-" + tabId).classList.add("active");
-  document.getElementById("content-" + tabId).classList.add("active");
-}
+document.addEventListener("DOMContentLoaded", function() {
 
-function closeTab(tabId) {
-  document.getElementById("tab-" + tabId).remove();
-  document.getElementById("content-" + tabId).remove();
-  const remainingTabs = document.querySelectorAll(".tab");
-  if (remainingTabs.length > 0) {
-    const firstTabId = remainingTabs[0].id.replace("tab-", "");
-    activateTab(firstTabId);
-  }
-}
+window.enviarSinal = function() {
+    const container = document.getElementById("sinaisContainer");
+    const now = new Date();
+    const hora = now.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+    const div = document.createElement("div");
+    div.textContent = hora + " ok";
+    div.dataset.hora = hora;
+    container.appendChild(div);
+};
 
-async function loadPolicy(file, title) {
-  const tabId = file.replace(/[^a-z0-9]/gi, "_");
-  if (document.getElementById("tab-" + tabId)) {
-    activateTab(tabId);
-    return;
-  }
-  try {
-    const response = await fetch(file);
-    if (!response.ok) throw new Error("Arquivo não encontrado");
-    const text = await response.text();
-    const tab = document.createElement("div");
-    tab.className = "tab";
-    tab.id = "tab-" + tabId;
-    tab.innerHTML = title + '<span class="close-btn" onclick="event.stopPropagation(); closeTab(\'' + tabId + '\')">×</span>';
-    tab.onclick = () => activateTab(tabId);
-    document.getElementById("tabs").appendChild(tab);
-    const content = document.createElement("div");
-    content.className = "tab-content";
-    content.id = "content-" + tabId;
-    content.innerHTML = marked.parse(text);
-    document.getElementById("tab-contents").appendChild(content);
-    activateTab(tabId);
-  } catch (error) {
-    alert("Erro ao carregar: " + error.message);
-  }
-}
+window.adicionarEncomenda = function(tipo) {
+    const id = tipo === 'entrada' ? "encomendaEntradaContainer" : tipo === 'saida' ? "encomendaSaidaContainer" : `encomenda${tipo.charAt(0).toUpperCase() + tipo.slice(1)}Container`;
+    const container = document.getElementById(id);
+    const div = document.createElement("div");
+    div.className = "item";
+    div.innerHTML = '<input type="text" placeholder="Casa" class="casa"><input type="text" placeholder="Nome do Morador" class="morador"><input type="time" class="hora"><button type="button" class="btn-remove" onclick="removerItem(this)">Remover</button>';
+    container.appendChild(div);
+};
 
-async function loadPolicy(file) {
-  const markdownViewer = document.getElementById('markdown-viewer');
-  const checklistViewer = document.getElementById('checklist-viewer');
+window.adicionarEncomendaPortaria = function() {
+    const container = document.getElementById("encomendaPortariaContainer");
+    const div = document.createElement("div");
+    div.className = "item";
+    div.innerHTML = '<input type="text" placeholder="Casa" class="casa"><input type="number" placeholder="Qtd" class="qtd" min="1"><select class="status"><option value="ok">ok</option><option value="verificando">verificando</option></select><button type="button" class="btn-remove" onclick="removerItem(this)">Remover</button>';
+    container.appendChild(div);
+};
 
-  checklistViewer.style.display = "none";
-  markdownViewer.style.display = "block";
+window.adicionarChave = function() {
+    const container = document.getElementById("chavesContainer");
+    const div = document.createElement("div");
+    div.className = "item";
+    div.innerHTML = '<input type="text" placeholder="Nome do Morador" class="chave-morador"><input type="text" placeholder="Casa" class="chave-casa"><input type="text" placeholder="Local" class="chave-local"><input type="time" class="chave-hora"><button type="button" class="btn-remove" onclick="removerItem(this)">Remover</button>';
+    container.appendChild(div);
+};
 
-  try {
-    const response = await fetch(file);
-    if (!response.ok) throw new Error('Arquivo não encontrado');
-    const text = await response.text();
+window.adicionarMorador = function() {
+    const container = document.getElementById("moradoresContainer");
+    const moradorDiv = document.createElement("div");
+    moradorDiv.className = "morador-section";
+    moradorDiv.innerHTML = '<div class="morador-header"><input type="text" placeholder="Nome do Morador" class="morador-nome"><input type="text" placeholder="Número da Casa" class="morador-casa"><input type="text" placeholder="Local (por morador)" class="morador-local"><button type="button" class="btn-remove" onclick="removerMorador(this)">Remover Morador</button></div><div class="convidados-lista"></div><button type="button" class="btn" onclick="adicionarConvidado(this)">Adicionar Convidado</button>';
+    container.appendChild(moradorDiv);
+};
 
-  
-    if (file.includes("checklist-onboarding.md")) {
-      markdownViewer.style.display = "none";
-      checklistViewer.style.display = "block";
-      checklistViewer.innerHTML = `
-        <h3>Checklist de Integração</h3>
-        <ul class="checklist">
-          <li><input type="checkbox"> Assinatura do contrato / entrega de documentos</li>
-          <li><input type="checkbox"> Criação de e-mail corporativo</li>
-          <li><input type="checkbox"> Acesso aos sistemas internos</li>
-          <li><input type="checkbox"> Entrega de equipamentos (CLT) </li>
-          <li><input type="checkbox"> Apresentação da empresa e da equipe</li>
-          <li><input type="checkbox"> Treinamento inicial</li>
-          <li><input type="checkbox"> Definição de metas dos primeiros 30 dias</li>
-        </ul>
-      `;
-    } else {
-      markdownViewer.innerHTML = marked.parse(text);
+window.adicionarConvidado = function(botao) {
+    const moradorDiv = botao.closest(".morador-section");
+    const lista = moradorDiv.querySelector(".convidados-lista");
+    const index = lista.children.length + 1;
+    const div = document.createElement("div");
+    div.className = "convidado-item";
+    div.innerHTML = `<span style="width:30px">${index}.</span><input type="text" placeholder="Nome do Convidado" class="convidado-nome"><button type="button" class="btn-remove" onclick="removerConvidado(this)">Remover</button>`;
+    lista.appendChild(div);
+};
+
+window.removerConvidado = function(botao) {
+    const lista = botao.closest(".convidados-lista");
+    const convidDiv = botao.parentElement;
+    convidDiv.remove();
+    const items = lista.children;
+    for (let i = 0; i < items.length; i++) {
+        const span = items[i].querySelector("span");
+        if (span) span.textContent = (i + 1) + ".";
     }
-  } catch (error) {
-    markdownViewer.innerHTML = `<p style="color:red;">Erro ao carregar o arquivo: ${error.message}</p>`;
-  }
-}
+};
+
+window.removerMorador = function(botao) {
+    const moradorDiv = botao.closest(".morador-section");
+    moradorDiv.remove();
+};
+
+window.removerItem = function(botao) {
+    botao.parentElement.remove();
+};
+
+document.getElementById("relatorioForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const payload = {};
+    payload.data = document.querySelector('input[name="data"]').value || "";
+    payload.sinais = Array.from(document.getElementById("sinaisContainer").children).map(d => d.dataset.hora || d.textContent);
+    payload.encomenda_entrada = Array.from(document.getElementById("encomendaEntradaContainer").children).map(div => {
+        return { casa: div.querySelector(".casa")?.value || "", morador: div.querySelector(".morador")?.value || "", hora: div.querySelector(".hora")?.value || "" };
+    });
+    payload.encomenda_portaria = Array.from(document.getElementById("encomendaPortariaContainer").children).map(div => {
+        return { casa: div.querySelector(".casa")?.value || "", qtd: div.querySelector(".qtd")?.value || "", status: div.querySelector(".status")?.value || "" };
+    });
+    payload.encomenda_saida = Array.from(document.getElementById("encomendaSaidaContainer").children).map(div => {
+        return { casa: div.querySelector(".casa")?.value || "", morador: div.querySelector(".morador")?.value || "", hora: div.querySelector(".hora")?.value || "" };
+    });
+    payload.chaves = Array.from(document.getElementById("chavesContainer").children).map(div => {
+        return { morador: div.querySelector(".chave-morador")?.value || "", casa: div.querySelector(".chave-casa")?.value || "", local: div.querySelector(".chave-local")?.value || "", hora: div.querySelector(".chave-hora")?.value || "" };
+    });
+    payload.convidados_por_morador = Array.from(document.getElementById("moradoresContainer").children).map(moradorDiv => {
+        const nome = moradorDiv.querySelector(".morador-nome")?.value || "";
+        const casa = moradorDiv.querySelector(".morador-casa")?.value || "";
+        const local = moradorDiv.querySelector(".morador-local")?.value || "";
+        const convidados = Array.from(moradorDiv.querySelectorAll(".convidado-item .convidado-nome")).map(i => i.value).filter(v => v && v.trim() !== "");
+        return { morador: nome, casa: casa, local: local, convidados: convidados };
+    });
+    payload.observacoes = document.querySelector('textarea[name="observacoes"]')?.value || "";
+    payload.whatsapp = document.querySelector('textarea[name="whatsapp"]')?.value || "";
+    try {
+        fetch('/api/relatorio', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) }).then(resp => {
+            if (resp.ok) {
+                document.getElementById("mensagem").innerText = "Relatório salvo com sucesso!";
+                document.getElementById("relatorioForm").reset();
+                document.getElementById("sinaisContainer").innerHTML = "";
+                document.getElementById("encomendaEntradaContainer").innerHTML = "";
+                document.getElementById("encomendaPortariaContainer").innerHTML = "";
+                document.getElementById("encomendaSaidaContainer").innerHTML = "";
+                document.getElementById("chavesContainer").innerHTML = "";
+                document.getElementById("moradoresContainer").innerHTML = "";
+            } else {
+                document.getElementById("mensagem").innerText = "Erro ao salvar (resposta do servidor).";
+            }
+        }).catch(() => {
+            document.getElementById("mensagem").innerText = "Relatório preparado (backend indisponível).";
+            console.log("Payload:", payload);
+        });
+    } catch (err) {
+        document.getElementById("mensagem").innerText = "Erro inesperado.";
+        console.error(err);
+    }
+});
+
+}); // Fim do DOMContentLoaded
