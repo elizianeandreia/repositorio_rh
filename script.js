@@ -77,3 +77,5 @@ async function loadPolicy(file) {
     markdownViewer.innerHTML = `<p style="color:red;">Erro ao carregar o arquivo: ${error.message}</p>`;
   }
 }
+
+
